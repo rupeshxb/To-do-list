@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do list</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="window-wrapper">
+      <div class="header">
+        <div class="title">My Todo list</div>
+        <div class="input-button">
+          <input type="text" id="myInput" placeholder="Put Title" />
+          <button onclick="addElement()" class="add-button">Add</button>
+        </div>
+        <div id="error-message"></div>
+      </div>
+
+      <div class="to-do-lists">
+        <div class="to-do-lists-inner">
+          <div class="container">
+            <ul id="list">
+              <li>Workout</li>
+              <li>Study</li>
+              <li>Code</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="display-input-value"></div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
